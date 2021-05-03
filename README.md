@@ -1,6 +1,6 @@
 # arue-server
 
-- Idea is to gather all things done to server here. In case all is lost the reinstall will be breeze.
+- Just gathering notes...
 
 # docker-compose
 ```
