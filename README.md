@@ -1,15 +1,17 @@
 # arue-server
 
 # docker-compose
+```
     3  sudo yum update
     4  sudo yum upgrade
     5  curl
     6  sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
     7  sudo chmod +x /usr/local/bin/docker-compose
     8  docker–compose –-version
-
+```
 
 # valheim
+```
    11  mkdir -p $HOME/valheim-server/config $HOME/valheim-server/data
    12  cd $HOME/valheim-server/
    13  cat > $HOME/valheim-server/valheim.env << EOF
@@ -30,16 +32,19 @@
    36  dhclient
 
    38  yum update
-   
+```  
   # docker
+  ```
    39  sudo yum install -y yum-utils
    40  sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
    41  sudo yum install docker-ce docker-ce-cli containerd.io
    42  sudo systemctl start docker
    43  docker ps
    49  sudo systemctl enable docker
+  ```
 
 # OPENSSH ssh port and valheim ports
+```
    45  sudo yum –y install openssh-server openssh-clients
    46  sudo systemctl start sshd
    47  sudo systemctl status sshd
@@ -69,8 +74,8 @@
    71  service sshd restart
    72  service sshd status
    73  ip addr
-
+```
 # Restart
-
+```
   113  shutdown --reboot
-
+```
