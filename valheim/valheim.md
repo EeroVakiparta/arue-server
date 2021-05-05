@@ -16,3 +16,10 @@
    19  curl -o $HOME/valheim-server/docker-compose.yaml https://raw.githubusercontent.com/lloesche/valheim-server-docker/main/docker-compose.yaml
    20  docker-compose up
    ```
+
+# TODO:
+config valheim better
+
+### Fast join on server
+
+https://nodecraft.com/support/games/valheim/how-to-quickly-find-and-join-your-valheim-server

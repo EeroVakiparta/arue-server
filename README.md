@@ -2,49 +2,6 @@
 
 - Just gathering notes...
 
-# docker-compose
-```
-    3  sudo yum update
-    4  sudo yum upgrade
-    5  curl
-    6  sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-    7  sudo chmod +x /usr/local/bin/docker-compose
-    8  docker–compose –-version
-```
-
-# valheim
-```
-   11  mkdir -p $HOME/valheim-server/config $HOME/valheim-server/data
-   12  cd $HOME/valheim-server/
-   13  cat > $HOME/valheim-server/valheim.env << EOF
-   14  SERVER_NAME=Arueheim
-   15  WORLD_NAME=Arueheim
-   16  SERVER_PASS=arue*****
-   17  SERVER_PUBLIC=true
-   18  EOF
-   19  curl -o $HOME/valheim-server/docker-compose.yaml https://raw.githubusercontent.com/lloesche/valheim-server-docker/main/docker-compose.yaml
-   20  docker-compose up
-   
-   22  sudo yum install -y yum-utils
-   23  sudo yum update
-
-   33  vi /etc/sysconfig/network-scripts/ifcfg-enp0s26f1u2
-   34  service network restart
-   35  nmcli d
-   36  dhclient
-
-   38  yum update
-```  
-  # docker
-  ```
-   39  sudo yum install -y yum-utils
-   40  sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-   41  sudo yum install docker-ce docker-ce-cli containerd.io
-   42  sudo systemctl start docker
-   43  docker ps
-   49  sudo systemctl enable docker
-  ```
-
 # OPENSSH ssh port and valheim ports
 ```
    45  sudo yum –y install openssh-server openssh-clients
