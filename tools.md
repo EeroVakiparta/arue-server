@@ -24,3 +24,9 @@ yum install emacs
 ```
 sudo yum install screen
 ```
+
+# ansible
+
+```
+sudo yum install ansible
+```
