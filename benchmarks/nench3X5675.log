@@ -1,6 +1,7 @@
 -------------------------------------------------
  nench.sh v2019.07.20 -- https://git.io/nench.sh
  benchmark timestamp:    2021-05-15 15:11:57 UTC
+ !! No other processes but little internet usage
 -------------------------------------------------
 
 Processor:    Intel(R) Xeon(R) CPU           X5675  @ 3.07GHz
