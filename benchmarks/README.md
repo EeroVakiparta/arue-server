@@ -12,6 +12,9 @@ http://www.phoronix-test-suite.com/
 
 ### Nench
 https://github.com/n-st/nench
+```
+(curl -s wget.racing/nench.sh | bash; curl -s wget.racing/nench.sh | bash) 2>&1 | tee logfilename.log
+```
 
 ## Before CPU upgrade 
 
