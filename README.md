@@ -2,6 +2,9 @@
 
 - Just gathering notes...
 
+https://www.bogotobogo.com/DevOps/Docker/Docker_Prometheus_Grafana.php
+https://github.com/stefanprodan/dockprom
+
 # OPENSSH ssh port and valheim ports
 ```
    45  sudo yum –y install openssh-server openssh-clients
