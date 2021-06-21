@@ -11,6 +11,7 @@ services:
         ENABLE_RCON: "true"
         RCON_PASSWORD: ${RCON_PASSWORD}
         RCON_PORT: 28016
+        - JVM_OPTS=-Xmx4g -Xms4g
     restart: always
     tty: true
     stdin_open: true

@@ -25,3 +25,7 @@ PING
 City center: 34 ms
 Amsterdam: 45 ms
 ```
+
+### TODO: study
+
+https://cassiofernando.netlify.app/blog/minecraft-java-arguments
