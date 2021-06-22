@@ -2,7 +2,7 @@ version: "3"
 
 services:
   mc:
-    image: itzg/minecraft-server
+    image: itzg/minecraft-server:java16
     ports:
       - 25565:25565
     environment:
@@ -11,7 +11,9 @@ services:
         ENABLE_RCON: "true"
         RCON_PASSWORD: ${RCON_PASSWORD}
         RCON_PORT: 28016
-        - JVM_OPTS=-Xmx4g -Xms4g
+        JVM_OPTS: >
+          -Xmx4G
+          -Xms4G
     restart: always
     tty: true
     stdin_open: true
