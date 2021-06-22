@@ -6,14 +6,12 @@ services:
     ports:
       - 25565:25565
     environment:
+        MEMORY: "4G"
         MOTD: "Welcome to Aruecraft"
         EULA: "TRUE"
         ENABLE_RCON: "true"
         RCON_PASSWORD: ${RCON_PASSWORD}
         RCON_PORT: 28016
-        JVM_OPTS: >
-          -Xmx4G
-          -Xms4G
     restart: always
     tty: true
     stdin_open: true
