@@ -23,3 +23,18 @@ config valheim better
 ### Fast join on server
 
 https://nodecraft.com/support/games/valheim/how-to-quickly-find-and-join-your-valheim-server
+
+# Valheim sucks a lot of cache so it should be rebooted daily
+
+
+  512  docker ps
+  513  cd /etc/
+  514  ls -l
+  515  vim cron.daily
+  516  crontab -e
+ // to restart every day at 5am
+  0 5 * * * docker restart e4051da78849
+
+  517  htop
+  518  docker ps
+  519  htop
