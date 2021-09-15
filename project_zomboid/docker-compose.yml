@@ -6,12 +6,12 @@ services:
         restart: unless-stopped
         environment:
             SERVER_NAME: "aruezombi"
-            ADMIN_PASSWORD: "*******"
+            ADMIN_PASSWORD: "*****"
         ports:
             - "8766:8766/udp"
             - "8767:8767/udp"
             - "16261:16261/udp"
             - "16262-16272:16262-16272"
-            - "27015:27015"
+            - "27015"
         volumes:
             - ./server-data:/server-data
