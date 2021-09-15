@@ -1,66 +1,44 @@
-# Minecraft
+# Project Zomboid
 
 ## Reference
 
-- https://github.com/itzg/docker-minecraft-server
-- https://serialized.net/2021/02/minecraft_server_docker/
+https://hub.docker.com/r/cyrale/project-zomboid
+https://github.com/cyrale/project-zomboid
 
 
 ## START / RESTART
 
 ```
-$cd /srv/minecraft/
-docker-compose -f aruecraft.yml up -d
-docker minecraft_mc_1 logs
+x
 ```
 
 ```
-$cd /srv/minecraft/
-docker-compose -f aruecraft.yml up -d
+x
 ```
 
 ### ports to be forwarder
-25565 - 25565	TCP	
-25575 - 25575	TCP	
-
+8766 - 8767 udp
+16261 - 16272 udp
 
 ## MAINTENACE
 
+### Server options
+
+```
+$vim /srv/projectzomboid/server-data/Server/aruezombi.ini
+```
+
 ### Log files
 
-Observerving logs
 ```
-$cd ~/data/minecraft/logs/
-$tailf latest.log
-$less 2021-07-27-3.log.gz
-$less * | grep WARN
+$cd /srv/projectzomboid/server-data/Logs
+```
+## ADDING A MOD or ADJUSTING CONFIGS
 
 ```
-
-### Server properties
-
-Observerving logs
+$docker stop projectzomboid_project-zomboid_1
+$vim /srv/projectzomboid/server-data/Server/aruezombi.ini
+### Add Name of the mod at Mods= and the Steam ID of the mod at WorkshopItems= 
+### Mods are separated with semicolon ;
+$docker start projectzomboid_project-zomboid_1
 ```
-$cd ~/data/minecraft/
-
-server.properties
-```
-requires restart
-
-### World file 
-
-```
-$cd ~/data/minecraft/world/
-```
-
-### Ping tests:
-
-```
-PING
-City center: 34 ms
-Amsterdam: 45 ms
-```
-
-### TODO: study
-
-https://cassiofernando.netlify.app/blog/minecraft-java-arguments
